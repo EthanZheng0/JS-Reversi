@@ -1,0 +1,102 @@
+/*
+ *  This project refers to the framework provided with the tic-tac-toe tutorial
+ *  on the official site of React-app. The basic structure has lots of similarity
+ *  with the tutorial code. However the implimentation of Reversi and the logic
+ *  are all the work of ours. The realization of rollback is also a whole new 
+ *  function, considering in Reversi, a single move changes other chess pieces, 
+ *  which is different from tic-tac-toe, Go or Backgammon.
+ *
+ *  Created by Ethan Zheng, Pascal Hao, 2018/04/25
+ */
+
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+    padding: 0%;
+  }
+  
+  .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+
+  button:hover {
+    background-color: rgb(225, 225, 225)
+  }
+
+  #ng:hover {
+    background-color: lightblue;
+  }
+
+  #ng, #rb {
+    padding: 3px;
+    font: 14px "Century Gothic", Futura, sans-serif;
+    border-radius: 3px;
+    border: 2px solid darkgray;
+    background-color: oldlace;
+  }
+
+  #cm {
+    padding: 3px;
+    font: 14px "Century Gothic", Futura, sans-serif;
+    border-radius: 3px;
+    border: 2px solid darkgray;
+    background-color: oldlace;
+    float: right;
+  }
+
+  #tracking {
+    font: 14px "Century Gothic", Futura, sans-serif;
+  }
+
+  #alert {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    color: red;
+    font-weight: bold;
+  }
+
+  #video {
+    float: right;
+  }
+  
